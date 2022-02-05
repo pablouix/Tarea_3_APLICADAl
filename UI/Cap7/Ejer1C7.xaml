@@ -1,0 +1,43 @@
+<Window x:Class="todosEjercicios.UI.Cap7.Ejer1C7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:todosEjercicios.UI.Cap7"
+        mc:Ignorable="d"
+        Title="Ejercio 1 cap 7" Height="300" Width="450">
+    <Grid>
+
+        <StackPanel Margin="16">
+            <StackPanel>
+                <TextBlock Text="Salon de Clases 🎒" HorizontalAlignment="Center" FontSize="16"/>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock Text="Cantidad de Alumnos"/>
+                <TextBox x:Name="TextBoxCantidadAlumnos"/>
+            </StackPanel>
+
+             <StackPanel>
+                <TextBlock Text="Calificacion de Alumno"/>
+                <TextBox x:Name="TextBoxCalificacionAlumno" IsEnabled="false"/>
+            </StackPanel>
+
+            <StackPanel Margin="0, 4, 0 , 4">
+                <TextBox Text="Calificacion Maxima" IsEnabled="false" x:Name="TextBoxCalificacionMaxAlumnos"/>
+            </StackPanel>
+            <StackPanel Margin="0, 4, 0 , 4">
+                <TextBox Text="Calificacion Minima" IsEnabled="false" x:Name="TextBoxCalificacionMinAlumnos"/>
+            </StackPanel>
+            <StackPanel Margin="0, 4, 0 , 4">
+                <TextBox Text="Promedio" IsEnabled="false" x:Name="TextBoxPromedioAlumnos"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="12">
+                <Button Content="💾Agregar" Click="Click_btnAgregar"/>
+                <Button Content="📄Limpiar" Click="Click_btnLimpiar"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>

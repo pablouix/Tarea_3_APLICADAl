@@ -1,0 +1,27 @@
+<Window x:Class="todosEjercicios.UI.Cap7.Ejer2C7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:todosEjercicios.UI.Cap7"
+        mc:Ignorable="d"
+        Title="Ejercio 2 cap 7" Height="300" Width="450">
+    <Grid>
+        <StackPanel  Margin="16" >
+          
+            <TextBlock Text="Diccionario Dominicano 📖" FontSize="18" HorizontalAlignment="Center"/>
+           
+            <StackPanel Orientation="Horizontal" Margin="0, 16, 0, 16" >
+                <TextBlock Text="Buscar " FontSize="14"/>
+                <TextBox Text="" x:Name="TextBoxNombre" Width="120"/>
+     
+                <Button Content="🔍" Width="50" Click="Click_btnBuscar" />
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock x:Name="TextDeficinicion"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
