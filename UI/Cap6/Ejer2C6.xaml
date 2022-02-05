@@ -5,11 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:todosEjercicios.UI.Cap6"
         mc:Ignorable="d"
-        Title="Ejercio 2 cap 6" Height="300" Width="450">
+        Title="Ejercio 2 cap 6" Height="360" Width="450">
     <Grid>
 
-        <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" >
+        
+         <StackPanel Margin="16">
+            <StackPanel>
+                <TextBlock Text="Salones de Clases 🎒" HorizontalAlignment="Center" FontSize="16"/>
+            </StackPanel>
 
+            <StackPanel>
+                <TextBlock Text="Cantidad de Salon"/>
+                <TextBox x:Name="TextBoxCantidadSalon"/>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock Text="Calificacion minima"/>
+                <TextBox x:Name="TextBoxCalificacionMinimaSalon" IsEnabled="false"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="12">
+                <Button Content="💾Agregar" Click="Click_btnAgregar" />
+                <Button Content="📄Limpiar" Click = "Click_btnLimpiar"/>
+            </StackPanel>
+
+            <StackPanel>
+                <TextBlock Text = "Datos sobre salones"/>
+                <ListView x:Name="ListViewPromedio" Height="100"/>
+            </StackPanel>
         </StackPanel>
+
     </Grid>
 </Window>
